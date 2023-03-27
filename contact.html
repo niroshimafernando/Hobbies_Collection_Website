@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Contact Me</title>
+  <link href="icon.png" rel="icon">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    input[type=text],
+    select,
+    textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #f1d70e;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+
+    }
+    
+
+    input[type=submit] {
+      background-color:  rgb(244, 173, 86);
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+      background-color: #c4b42a;
+    }
+
+    .container {
+      border-radius: 5px;
+      background-color: rgba(170, 241, 4, 0.055);
+      padding: 20px;
+    }
+
+
+    #footer {
+      margin-top: 100px;
+    }
+    ul{
+        list-style-type: none;
+        float: right; 
+        margin-top: 25px;
+    }
+    ul li{
+        list-style: none;
+        display: inline-block;
+        margin: 0 20px;
+        position: relative;
+    }
+    
+    ul li a{
+        text-decoration: none;
+        color: #000;
+        text-transform: uppercase;
+       
+    }
+    ul li::after{
+        content: '';
+        height: 3px;
+        background: #000;
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        transition: 0.5s;
+    }
+    ul li:hover::after{
+        width: 100%;
+    }
+    /*ul li a:hover{
+        background-color: #fff;
+        color: #000;
+    }
+    ul li.active a{
+        background-color: #fff;
+        color: #000;
+    }*/
+    
+    .nav-bar{
+        max-width: 1400px;
+        margin: auto;
+        background-color: rgb(207, 145, 51);
+    }
+
+    img{
+        float: left;
+        width: 170px;
+        height: auto;
+        padding: 20px 25px;
+    }
+
+    body{
+        line-height: 1.5;
+        font-family: 'Poppins', sans-serif;
+    }
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+    .container{
+        max-width: 1170px;
+    
+        margin:auto;
+    }
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    ul{
+        list-style: none;
+    }
+     .footer{
+        background-color: #24262b;
+        padding: 70px 0;
+    }
+    
+    .footer-col{
+       width: 25%;
+       padding: 0 15px;
+    }
+    .footer-col h4{
+        font-size: 18px;
+        color: #ffffff;
+        text-transform: capitalize;
+        margin-bottom: 35px;
+        font-weight: 500;
+        position: relative;
+    }
+    .footer-col h4::before{
+        content: '';
+        position: absolute;
+        left:0;
+        bottom: -10px;
+        background-color:rgb(4, 174, 241);
+        height: 2px;
+        box-sizing: border-box;
+        width: 50px;
+    }
+    .footer-col ul li:not(:last-child){
+        margin-bottom: 10px;
+    }
+    .footer-col ul li a{
+        font-size: 16px;
+        text-transform: capitalize;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 300;
+        color: #bbbbbb;
+        display: block;
+        transition: all 0.3s ease;
+    }
+    .footer-col ul li a:hover{
+        color: #ffffff;
+        padding-left: 8px;
+    }
+    .footer-col .social-links a{
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        background-color: rgba(255,255,255,0.2);
+        margin:0 10px 10px 0;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        color: #ffffff;
+        transition: all 0.5s ease;
+    }
+    .footer-col .social-links a:hover{
+        color: #24262b;
+        background-color: #ffffff;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!-- nav bar -->
+  <div class="nav-bar">
+            
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="hobbies.html" target="_blank">Hobbies</a></li>
+        <li><a href="about.html" target="_blank">About</a></li>
+        <li><a href="#" target="_blank">Contact</a></li>
+        <li><a href="comments.html" target="_blank">Feedbacks</a></li>
+    </ul>
+</div>
+<img src="logo.png" alt="logo" class="logo">
+
+<br><br><br><br><br>
+
+  <!-- contact us -->
+
+  <h1 style="font-style: italic;text-align: center;">Contact me when you want</h1>
+  <h2 style="font-style: italic;text-align: center;">If you have Quries You can use here</h2>
+  <div class="container">
+    <form>
+      <label for="fname">First Name</label>
+      <input type="text" oninvalid="alert('You must fill out the First Name !');" placeholder="Your name..">
+
+      <label for="lname">Last Name</label>
+      <input type="text" oninvalid="alert('You must fill out the Last Name !');" placeholder="Your last name..">
+
+      <label for="lname">E-mail</label>
+      <input type="text" oninvalid="alert('You must fill out the E-mail !');" required placeholder="Your e-mail ..">
+
+      </select>
+      <div>
+        <label for="query">Query</label>
+        <textarea id="subject" oninvalid="alert('You can enter here.....!');" placeholder="Write.."
+          style="height:200px"></textarea>
+        <div oninvalid="alert('You must fill out the details !');">
+          <input type="submit" required value="Submit" onclick="myfunction()">
+        </div>
+      </div>
+    </form>
+
+    <!-- footer -->
+
+
+
+    <script>
+      function myfunction() {
+
+        alert("We will contact you soon based on the details you give.");
+      }
+
+    </script>
+
+     <!-- footer begin -->
+  <div id="footer">
+    <footer>
+   <div class="footer">
+     <div class="container">
+<div class="row">
+   <div class="footer-col">
+         <h4>Hobbyist Heaven</h4>
+         <ul>
+           <li><a href="#">about us</a></li>
+           <li><a href="#">what you can see</a></li>
+           <li><a href="#">privacy policies</a></li>
+         </ul>
+   </div>
+   <div class="footer-col">
+     <h4>get help</h4>
+     <ul>
+       <li><a href="#">FAQ</a></li>
+       <li><a href="#">returns</a></li>
+       <li><a href="#">contact</a></li>
+       
+     </ul>
+   </div>
+       
+ <div class="footer-col">
+   <h4>Follow us</h4>
+ <div class="social-links">
+     <a href="#"><i class="fab fa-facebook-f"></i></a>
+     <a href="#"><i class="fab fa-twitter"></i></a>
+     <a href="#"><i class="fab fa-instagram"></i></a>
+     <a href="#"><i class="fab fa-linkedin-in"></i></a>
+   </div>
+</div>
+
+</div>
+</div>
+</div>
+ </footer>
+
+
+ </div>
+</body>
+
+</html>

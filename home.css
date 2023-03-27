@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&family=The+Nautigal&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.background-image{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('./background_01.webp');
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+}
+
+ul{
+    list-style-type: none;
+    float: right; 
+    margin-top: 25px;
+}
+ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+   
+}
+ul li::after{
+    content: '';
+    height: 3px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+ul li:hover::after{
+    width: 100%;
+}
+/*ul li a:hover{
+    background-color: #fff;
+    color: #000;
+}
+ul li.active a{
+    background-color: #fff;
+    color: #000;
+}*/
+
+.nav-bar{
+    max-width: 1400px;
+    margin: auto;
+}
+.welcome #greet{
+    font-size: 46px;
+    position: absolute;
+    top: 40%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-weight: bold;
+}
+img{
+    float: left;
+    width: 170px;
+    height: auto;
+    padding: 20px 25px;
+}
+.welcome #intro{
+    color: antiquewhite;
+    position: absolute;
+    top: 46%;
+    left: 25%;
+    text-align: center;
+    font-size: large;
+}
+.btn button{
+    padding: 7px 30px;
+    margin-right: 15px;
+    outline: none;
+    border: 1px solid antiquewhite;
+    border-radius: 20px;
+    cursor: pointer;
+    color: bisque;
+    background: transparent;
+    position: relative;
+    overflow: hidden;
+   
+}
+
+.btn .view{
+    background: linear-gradient(bisque,antiquewhite);
+    box-shadow: 0 2px 15px rgba(248, 38 ,103, 0.26);
+    color: #000000;
+    position: fixed;
+    bottom: 40%;
+    left: 35%;
+
+}
+.btn .learn{
+    position: fixed;
+    bottom: 40%;
+    left: 46%;
+}
+span{
+    background: #fff;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
